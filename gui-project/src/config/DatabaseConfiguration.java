@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  * @author asus
  */
  public class DatabaseConfiguration {
-    public static Connection getKoneksi(String host, String port, String username, String password, String dataBaseName) {
+    public static Connection getConnection(String host, String port, String username, String password, String dataBaseName) {
         String configJdbc = "jdbc:mysql://" + host + ":" + port + "/" + dataBaseName;
         Connection koneksi = null;
         try {
